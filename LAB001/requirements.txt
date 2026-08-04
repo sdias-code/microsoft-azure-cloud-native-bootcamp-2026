@@ -1,0 +1,6 @@
+streamlit==1.60.0
+pymssql==2.3.13
+azure-identity==1.25.3
+azure-storage-blob==12.30.0
+azure-core==1.41.0
+python-dotenv==1.2.2

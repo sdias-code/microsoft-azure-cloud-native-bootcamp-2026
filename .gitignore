@@ -1,0 +1,33 @@
+### --- Python & Virtual Environments ---
+# Ignora o ambiente virtual da raiz ou de qualquer subpasta
+.venv/
+venv/
+ENV/
+env/
+python/
+__pycache__/
+*.py[cod]
+*$py.class
+
+### --- App Secrets & Configurations (CRÍTICO) ---
+# Ignora arquivos de variáveis de ambiente de qualquer laboratório
+.env
+*.env
+.env.*
+!.env.example
+secrets.toml
+.streamlit/secrets.toml
+
+### --- IDEs & Text Editors ---
+# Configurações locais de editores que você possa usar no Ubuntu
+.vscode/
+.idea/
+*.swp
+*.swo
+
+### --- Operating System Files ---
+# Arquivos ocultos do Linux/Ubuntu
+.DS_Store
+.directory
+.trash/
+Thumbs.db

@@ -9,8 +9,11 @@ Este repositório centraliza todos os desafios de código, projetos práticos e 
 O bootcamp é dividido em módulos estratégicos focados na arquitetura cloud-native:
 
 - **Labs/Lab01 - Fundamentos da Plataforma Azure**
-  - *Status:* 🛠️ Em desenvolvimento
+  - *Status:* ✅ Concluído
   - *Escopo:* Criação de Contas de Armazenamento (Storage Accounts), isolamento de segurança e integração com aplicação em Python (Streamlit) para upload e gerenciamento de imagens via Blob Storage.
+  - *Funcionalidades:* Upload de imagens (máx. 1 MB) com autenticação via RBAC/`az login` (sem chaves), criação automática do container `fotos`, persistência dos metadados (título, descrição, URL) no **Azure SQL Database** (`dbo.Fotos`), galeria responsiva (desktop/tablet/celular), edição de título e descrição e exclusão com confirmação.
+  - *Tecnologias:* Python 3.12, Streamlit 1.60, Azure Blob Storage, Azure SQL Database (pymssql), Azure CLI (`DefaultAzureCredential`), python-dotenv.
+  - *Estrutura do projeto:* `app.py` (orquestração Streamlit), `config.py` (configuração/logging), `database.py` (CRUD no Azure SQL), `storage.py` (upload no Blob Storage), `ui.py` (interface/CSS), `query1.md` (script SQL da tabela) e `screen/` (screenshots).
   
 - **Labs/Lab02 - Contêineres e Orquestração na Azure**
   - *Status:* ⏳ Aguardando
