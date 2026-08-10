@@ -1,0 +1,29 @@
+@Api_HostAddress = http://localhost:5080
+
+### Lista todas as fotos
+GET {{Api_HostAddress}}/api/photos
+Accept: application/json
+
+###
+
+### Busca uma foto por id
+GET {{Api_HostAddress}}/api/photos/1
+Accept: application/json
+
+###
+
+### Atualiza título e descrição de uma foto
+PUT {{Api_HostAddress}}/api/photos/1
+Content-Type: application/json
+
+{
+  "titulo": "Título atualizado",
+  "descricao": "Nova descrição"
+}
+
+###
+
+### Exclui uma foto
+DELETE {{Api_HostAddress}}/api/photos/1
+
+###

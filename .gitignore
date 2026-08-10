@@ -25,6 +25,70 @@ secrets.toml
 *.swp
 *.swo
 
+### --- .NET (api/) ---
+# Build outputs e dependências de runtime
+bin/
+obj/
+out/
+artifacts/
+*.dll
+*.exe
+*.pdb
+
+# Arquivos de configuração do usuário / máquina local
+*.user
+*.suo
+*.userosscache
+*.rsuser
+.vs/
+.vsconfig
+TestResults/
+
+# Pacotes locais do NuGet
+*.nupkg
+*.snupkg
+# .nupkg_metadata
+*.nupkg.metadata
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Arquivos de cache/rastreamento
+*.cache
+*.orig
+*.rej
+*.tmp
+
+### --- Node.js & React (front/) ---
+# Dependências
+node_modules/
+jspm_packages/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.lerna/
+.npm/
+.yarn/
+.yarnrc.yml
+
+# Builds do frontend
+dist/
+dist-ssr/
+build/
+*.local
+.vite/
+
+# Cobertura de testes e logs
+coverage/
+coverage.*
+*.tsbuildinfo
+next-env.d.ts
+
+# Variáveis de ambiente do front
+.env.*.local
+.env.local
+
 ### --- Operating System Files ---
 # Arquivos ocultos do Linux/Ubuntu
 .DS_Store
