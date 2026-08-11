@@ -21,7 +21,7 @@ public class BlobStorageService
     public async Task<string> UploadAsync(Stream stream, string fileName, string? contentType)
     {
         var container = _blobServiceClient.GetBlobContainerClient(_containerName);
-        await container.CreateIfNotExistsAsync(PublicAccessType.None);
+        await container.CreateIfNotExistsAsync(PublicAccessType.Blob);
 
         var extension = Path.GetExtension(fileName);
         if (string.IsNullOrWhiteSpace(extension))

@@ -1,0 +1,7 @@
+RESOURCE_GROUP="lab002-brazilsouth-dio-api-dotnet-fotos"
+LOCATION="brazilsouth"
+ACR_NAME="meuacrnamecointainer"
+IMAGE_NAME="api-dotnet-fotos"
+TAG="v1"
+CONTAINER_APP_NAME="minha-api-net-fotos"
+ENVIRONMENT_NAME="meu-ambiente-api-fotos"
